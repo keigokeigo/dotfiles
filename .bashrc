@@ -28,6 +28,7 @@ alias ls='ls --color=always'
 alias ps='ps --sort=start_time'
 alias grep='grep --color=always'
 alias http500="awk '{ if ( \$10 ~ /^50[0-9]\$/ ){print \$0}}'"
+alias gitproxy='git config --global http.proxy 172.20.253.21:8080 ; git config --global https.proxy 172.20.253.21:8080'
 
 PDSH_SSH_ARGS_APPEND="-q -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o PreferredAuthentications=publickey"
 
