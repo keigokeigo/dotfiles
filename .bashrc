@@ -1,13 +1,15 @@
-GIT_PS1_SHOWDIRTYSTATE=true
-GIT_PS1_SHOWSTASHSTATE=true
-GIT_PS1_SHOWUNTRACKEDFILES=true
-GIT_PS1_SHOWUPSTREAM=true
-GIT_PS1_SHOWCOLORHINTS=true
-source /usr/share/git-core/contrib/completion/git-prompt.sh
-export PROMPT_COMMAND='__git_ps1 "\[\033[1;36m\]\u@\h\[\e[00m\] \[\e[1;34m\]\w\[\e[00m\]" " \$ "'
-# XDebug
-export XDEBUG_CONFIG="idekey=DBGP"
-export XDEBUG_SESSION_START=DBGP
+if [[ "$HOSTNAME" =~ "-dev-" ]]; then
+  GIT_PS1_SHOWDIRTYSTATE=true
+  GIT_PS1_SHOWSTASHSTATE=true
+  GIT_PS1_SHOWUNTRACKEDFILES=true
+  GIT_PS1_SHOWUPSTREAM=true
+  GIT_PS1_SHOWCOLORHINTS=true
+  source /usr/share/git-core/contrib/completion/git-prompt.sh
+  export PROMPT_COMMAND='__git_ps1 "\[\033[1;36m\]\u@\h\[\e[00m\] \[\e[1;34m\]\w\[\e[00m\]" " \$ "'
+  # XDebug
+  export XDEBUG_CONFIG="idekey=DBGP"
+  export XDEBUG_SESSION_START=DBGP
+fi
 
 
 #ユニットテスト用の環境設定
