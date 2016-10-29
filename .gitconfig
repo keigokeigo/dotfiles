@@ -1,6 +1,8 @@
 [user]
-	name = k5ito
-	email = k5ito@nttr.co.jp
+	;;;name = k5ito
+	;;;email = k5ito@nttr.co.jp
+	name = keigokeigo
+	email = keigo.ito@gmail.com
 [core]
 	editor = vim
 	pager = less -R
