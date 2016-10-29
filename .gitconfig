@@ -1,0 +1,22 @@
+[user]
+	name = k5ito
+	email = k5ito@nttr.co.jp
+[core]
+	editor = vim
+	pager = less -R
+	autocrlf = false
+	safecrlf = true
+	whitespace = trailing-space,space-before-tab,indent-with-non-tab
+;;;[help]
+;;;	autocorrect = true
+[color]
+	ui = auto
+[push]
+	default = simple
+[help]
+	autocorrect = true
+
+[http]
+	proxy = http://172.20.253.21:8080
+[https]
+	proxy = http://172.20.253.21:8080
